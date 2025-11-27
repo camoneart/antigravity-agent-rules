@@ -5,11 +5,11 @@ description: このルールファイルは、このリポジトリでNext.jsの
 
 ## リファレンス
 
-.agent/rules/nextjs-bestpractice-rule/docs
+`.agent/rules/nextjs-bestpractice-rule/docs/`
 
 リファレンスの設計思想に必ず必ず必ず必ず従うこと。
 
-このルールファイルの各セクションで、URLパスを指定してる箇所が複数あるが、全て `.agent/rules/nextjs-bestpractice-rule/docs` の中にあるので必ず必ず必ず必ず参照すること。
+このルールファイルの各セクションで、URLパスを指定してる箇所が複数あるが、全て `.agent/rules/nextjs-bestpractice-rule/docs/` の中にあるので必ず必ず必ず必ず参照すること。
 
 ## 開発コマンド
 
@@ -25,7 +25,7 @@ description: このルールファイルは、このリポジトリでNext.jsの
 - `pnpm test:run`でVitestを使用してテスト
 - テスト環境はjsdomで構成
 - セットアップファイル: `vitest.setup.ts`
-- テストはコンポーネントと同じ場所に配置（例：`app/page.test.tsx`）
+- テストはコンポーネントと同じ場所に配置（例：`src/app/page.test.tsx`）
 
 ## アーキテクチャ
 
@@ -39,8 +39,8 @@ App Routerを使用したミニマルなNext.jsアプリケーション：
 - **パッケージマネージャー**: pnpm
 
 ### プロジェクト構造
-- `app/` - Next.js App Routerのページとコンポーネント
-- `docs/akfm-knowledge/` - ドキュメントとナレッジベース（Biomeチェック対象外）
+- `src/app/` - Next.js App Routerのページとコンポーネント
+- `.agent/rules/nextjs-bestpractice-rule/docs/` - ドキュメントベース（Biomeチェック対象外）
 - ルートレベルの設定ファイル
 
 ### 主要機能
@@ -59,18 +59,18 @@ App Routerを使用したミニマルなNext.jsアプリケーション：
 
 ## テスト戦略
 - テストはコンポーネントと同じ場所に配置
-- テストは`@akfm/test-utils`の`step()`を使用してAAAパターンで記述
+- テストは`.agent/rules/nextjs-bestpractice-rule/docs/testing/frontend-unit-testing.md`を必ず必ず必ず必ず参照し、AAAパターンで記述
 - コンポーネントテストにはReact Testing Libraryを使用
 - Vitest設定にはjsdom環境を含む
 - セットアップファイルでテスト設定を処理
 
 ## ドキュメント・ナレッジベース
 
-`docs/akfm-knowledge/`ディレクトリには、React・Next.js・テストに関する包括的なベストプラクティスドキュメントが含まれています。
+`.agent/rules/nextjs-bestpractice-rule/docs/`ディレクトリには、React・Next.js・テストに関する包括的なベストプラクティスドキュメントが含まれています。
 
 ### 主要ドキュメント構成
 
-#### 1. Next.js基本原理ガイド (`nextjs-basic-principle/`)
+#### 1. Next.js基本原理ガイド (`.agent/rules/nextjs-bestpractice-rule/docs/nextjs-basic-principle/`)
 Next.js App Routerの包括的なガイド（36章構成）：
 
 **Part 1: データ取得 (11章)**
@@ -115,8 +115,8 @@ Next.js App Routerの包括的なガイド（36章構成）：
   - `part_5_auth.md` - 認証・認可パターン
   - `part_5_error_handling.md` - エラーハンドリング戦略
 
-#### 2. 単体記事 (`articles/`)
-**フロントエンド単体テスト** (`articles/frontend-unit-testing.md`)
+#### 2. 単体テスト (`.agent/rules/nextjs-bestpractice-rule/docs/testing/`)
+**フロントエンド単体テスト** (`.agent/rules/nextjs-bestpractice-rule/docs/testing/frontend-unit-testing.md`)
 - **参照タイミング**: テスト戦略策定・テスト実装時
 - **内容**: 
   - Classical vs London school テスト手法
@@ -127,8 +127,8 @@ Next.js App Routerの包括的なガイド（36章構成）：
 ### 参照ガイドライン
 
 **参照タイミング**:
-- 実装時には関連するドキュメントを必ず参照する
-- ドキュメントを参照したら、「📖{ドキュメント名}を読み込みました」と出力すること
+- 実装時には関連するドキュメントを必ず必ず必ず必ず参照する
+- ドキュメントを参照したら、「📖{ドキュメント名}を読み込みました」と必ず必ず必ず必ず出力すること
 
 **機能実装時の参照優先順位**:
 1. **データ取得実装** → Part 1のドキュメント群を参照

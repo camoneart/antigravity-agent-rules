@@ -5,11 +5,11 @@ description: このルールファイルは、このリポジトリでNext.jsの
 
 ## リファレンス
 
-.agent/rules/nextjs-bestpractice-rule/_docs
+.agent/rules/nextjs-bestpractice-rule/docs
 
 リファレンスの設計思想に必ず必ず必ず必ず従うこと。
 
-このルールファイルの各セクションで、URLパスを指定してる箇所が複数あるが、全て `.agent/rules/nextjs-bestpractice-rule/_docs` の中にあるので必ず必ず必ず必ず参照すること。
+このルールファイルの各セクションで、URLパスを指定してる箇所が複数あるが、全て `.agent/rules/nextjs-bestpractice-rule/docs` の中にあるので必ず必ず必ず必ず参照すること。
 
 ## 開発コマンド
 

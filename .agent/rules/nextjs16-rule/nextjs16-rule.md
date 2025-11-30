@@ -1,6 +1,6 @@
 ---
 trigger: model_decision
-description: プロジェクト内のNext.jsのバージョンが16を使用してる場合、必ず必ず必ず必ず発動。
+description: プロジェクト内のNext.jsのバージョンが16以上を使用してる場合、必ず必ず必ず必ず発動。
 ---
 
 ## 概要
